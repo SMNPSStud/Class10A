@@ -1,5 +1,2 @@
-My name is Nishika.
-I am learning Python Language
-
-
-
+My name is Jitendra singh.
+I am learning to code.
