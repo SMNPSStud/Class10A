@@ -1,4 +1,4 @@
-import pygame,sys
+import pygame , sys
 
 pygame.init()
 clock=pygame.time.Clock()
@@ -11,11 +11,11 @@ w1 = pygame.Rect(100,150,50,50)
 b2 = pygame.Rect(150,150,50,50)
 w2 = pygame.Rect(150,100,50,50)
 
-b3 = pygame.Rect(200,200,50,50)
-w3 = pygame.Rect(200,150,50,50)
+b3 = pygame.Rect(150,150,100,100)
+w3 = pygame.Rect(150,150,100,100)
 
-b4 = pygame.Rect(250,250,50,50)
-w4 = pygame.Rect(250,200,50,50)
+b4 = pygame.Rect(200,200,150,150)
+w4 = pygame.Rect(200,200,150,150)
 
 while True:    
     screen.fill((150,75,0))
@@ -30,4 +30,12 @@ while True:
     pygame.draw.rect(screen,(0,0,0),b2)
     pygame.draw.rect(screen,(255,255,255),w2)
     
+    pygame.draw.rect(screen,(0,0,0),b3)
+    pygame.draw.rect(screen,(255,255,255),w3)
+    
+    pygame.draw.rect(screen,(0,0,0),b4)
+    pygame.draw.rect(screen,(255,255,255),w4)
+    
     pygame.display.update()
+    
+    
