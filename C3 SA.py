@@ -1,4 +1,4 @@
-import pygame,sys
+import pygame
 
 pygame.init()
 
@@ -12,16 +12,16 @@ dino_y_change = 0
 
 while True:
     screen.fill((255, 255, 255))
-    for event in pygame.event.get():
+    for event in pygame.event.get(): 
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
     
-        if event.type == pygame.KEYUP:
+        if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 dino_y_change = -1
                 
-        if event.type == pygame.KEYDOWN:
+        if event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE:
                 dino_y_change = 1
     
