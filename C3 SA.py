@@ -1,4 +1,4 @@
-import pygame ,sys 
+import pygame,sys
 
 pygame.init()
 
@@ -19,11 +19,10 @@ while True:
     
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
-                dino_y_change = -1
-                
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.KEY_SPACE:
                 dino_y_change = 1
+        if event.type == pygame.KEYUP:
+            if event.key == pygame.K_SPACE:
+                dino_y_change = -1
     
     dino_rect.y += dino_y_change
     if dino_rect.y < 100:
