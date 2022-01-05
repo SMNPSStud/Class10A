@@ -1,4 +1,4 @@
-import pygame
+import pygame, sys
 
 pygame.init()
 
@@ -12,7 +12,7 @@ dino_y_change = 0
 
 while True:
     screen.fill((255, 255, 255))
-    for event in pygame.event.get(): 
+    for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
@@ -21,9 +21,9 @@ while True:
             if event.key == pygame.K_SPACE:
                 dino_y_change = -1
                 
-        if event.type == pygame.KEYUP:
-            if event.key == pygame.K_SPACE:
-                dino_y_change = 1
+            if event.type == pygame.KEYUP:
+             if event.key == pygame.K_SPACE:
+                 dino_y_change = 1
     
     dino_rect.y += dino_y_change
     if dino_rect.y < 100:
@@ -33,7 +33,7 @@ while True:
    
     cactus_rect.x = cactus_rect.x - 1
     if cactus_rect.x <= -30:
-        cactus_rect.x = 1200
+        cactus_rect.x = 1800
         
     pygame.draw.rect(screen, (100, 100, 100), dino_rect)
     pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
