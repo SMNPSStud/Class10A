@@ -1,4 +1,4 @@
-import  pygame 
+import  pygame
 
 pygame.init()
 clock=pygame.time.Clock()
@@ -11,8 +11,8 @@ w1 = pygame.Rect(100,150,50,50)
 b2 = pygame.Rect(150,150,50,50)
 w2 = pygame.Rect(150,100,50,50)
 
-b3 = pygame.Rect (200,100,50,50)
-w3 = pygame.Rect (200,150,50,50)
+b3 = pygame.Rect(200,100,50,50)
+w3 = pygame.Rect(200,150,50,50)
 
 b4 = pygame.Rect(250,150,50,50)
 w4 = pygame.Rect(250,100,50,50)
