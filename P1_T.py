@@ -1,4 +1,4 @@
-import pygame,sys
+import pygame ,sys
 
 pygame.init()
 clock=pygame.time.Clock()
@@ -29,10 +29,10 @@ while True:
     
     pygame.draw.rect(screen,(0,0,0),b2)
     pygame.draw.rect(screen,(255,255,255),w2)
-    
+
     pygame.draw.rect(screen,(0,0,0),b3)
     pygame.draw.rect(screen,(255,255,255),w3)
-    
+     
     pygame.draw.rect(screen,(0,0,0),b4)
     pygame.draw.rect(screen,(255,255,255),w4)
     pygame.display.update()
