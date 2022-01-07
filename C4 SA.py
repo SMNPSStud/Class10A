@@ -37,13 +37,11 @@ while True:
     pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
     pygame.draw.rect(screen, (100, 100, 100), ground_rect)
     
-    if dino_rect.colliderect (cactus_rect) : 
+    if dino_rect.colliderect (cactus_rect):
        pygame.time.delay(2000)
        pygame.quit()
     
-    
     pygame.display.update()
-    
     
     
     
