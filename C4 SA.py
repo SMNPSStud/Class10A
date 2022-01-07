@@ -30,17 +30,16 @@ while True:
         dino_rect.y = 100
     
     cactus_rect.x = cactus_rect.x - 1
-    if cactus_rect.x <= -30:  
+    if cactus_rect.x <= -30:
         cactus_rect.x = 1200
         
     pygame.draw.rect(screen, (100, 100, 100), dino_rect)
     pygame.draw.rect(screen, (100, 100, 100), cactus_rect)
     pygame.draw.rect(screen, (100, 100, 100), ground_rect)
-  
-    if dino_rect.colliderect (cactus_rect):
-        pygame.time.delay(2000) 
-        pygame.quit()
     
+    if dino_rect.colliderect (cactus_rect): 
+        pygame.time.delay(2000)
+        pygame.quit()
     pygame.display.update()
     
     
